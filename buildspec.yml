@@ -1,7 +1,7 @@
 
 version: 0.2
 
-phases:
-  pre_build:
-    commands:
-      - echo Nothing to do in the pre_build phase...
+artifacts:
+  files:
+    - 'appspec.yml'
+  discard-paths: no
