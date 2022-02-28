@@ -2,7 +2,7 @@ version: 0.0
 os: linux 
 files:
   - source: /
-    destination: /home/ubuntu/reactjs
+    destination: /home/ubuntu/react-js
 hooks:
   ApplicationStart:
     - location: scripts/application_start.sh
