@@ -9,10 +9,11 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - sudo npm install -f --unsafe-perm=true --allow-root
+      - sudo npm install
   post_build:
     commands:
       - echo build completed
+      - sudo npm start src/index.js
 artifacts:
   files:
     - appspec.yml
