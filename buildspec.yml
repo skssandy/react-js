@@ -13,7 +13,7 @@ phases:
   post_build:
     commands:
       - echo build completed
-      - sudo npm start src/index.js
+      - sudo pm2 start npm start src/index.js -- start
 artifacts:
   files:
     - appspec.yml
